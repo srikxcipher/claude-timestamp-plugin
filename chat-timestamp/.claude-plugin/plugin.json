@@ -1,0 +1,4 @@
+{
+  "name": "chat-timestamp",
+  "description": "Adds timestamps to every user prompt and Claude response in the terminal for audit purposes"
+}
