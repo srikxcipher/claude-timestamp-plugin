@@ -5,5 +5,5 @@ LOG_FILE="${HOME}/.claude/timestamp-audit.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 echo "[${TIMESTAMP}] Claude response completed" >> "$LOG_FILE" 2>/dev/null || true
 
-printf '{}\n'
+printf '{"systemMessage":"⏱  [%s]"}\n' "$TIMESTAMP"
 exit 0
