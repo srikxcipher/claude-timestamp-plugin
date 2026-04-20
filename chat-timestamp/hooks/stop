@@ -2,7 +2,7 @@
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 LOG_FILE="${HOME}/.claude/timestamp-audit.log"
 
-echo "⏱  [${TIMESTAMP}] Claude response completed" > /dev/tty 2>/dev/null || true
+echo "⏱  [${TIMESTAMP}] Claude response completed" >&2
 mkdir -p "$(dirname "$LOG_FILE")"
 echo "[${TIMESTAMP}] Claude response completed" >> "$LOG_FILE" 2>/dev/null || true
 
