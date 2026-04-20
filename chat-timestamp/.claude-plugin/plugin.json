@@ -1,4 +1,9 @@
 {
   "name": "chat-timestamp",
-  "description": "Adds timestamps to every user prompt and Claude response in the terminal for audit purposes"
+  "version": "1.0.0",
+  "description": "Adds timestamps to every user prompt and Claude response in the terminal for audit purposes",
+  "author": {
+    "name": "Srikant Panda",
+    "email": "srikant.panda@facets.cloud"
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "claude-custom-plugins",
+  "owner": {
+    "name": "Srikant Panda",
+    "email": "pandasrikant365@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "chat-timestamp",
+      "source": "./chat-timestamp",
+      "version": "1.0.0",
+      "description": "Adds timestamps to every user prompt and Claude response in the terminal for audit purposes",
+      "keywords": ["timestamp", "audit", "logging", "productivity"],
+      "license": "MIT"
+    }
+  ]
+}
