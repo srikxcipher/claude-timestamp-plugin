@@ -2,9 +2,8 @@
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 LOG_FILE="${HOME}/.claude/timestamp-audit.log"
 
-echo "⏱  [${TIMESTAMP}] User prompt submitted" >&2
 mkdir -p "$(dirname "$LOG_FILE")"
 echo "[${TIMESTAMP}] User prompt submitted" >> "$LOG_FILE" 2>/dev/null || true
 
-printf '{}\n'
+printf '{"systemMessage":"⏱  [%s] User prompt submitted"}\n' "$TIMESTAMP"
 exit 0
